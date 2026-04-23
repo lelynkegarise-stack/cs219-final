@@ -11,15 +11,6 @@ nav {
     z-index: 1000;
     height: 70px;
 }
-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
 /* ==========================
    3. INTRO SECTION
    ========================== */
