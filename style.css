@@ -3,17 +3,18 @@
    ========================== */
 nav {
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    background-color: white; 
-}
-nav ul {
-    display: flex;
-    list-style-type: none;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0 20px;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+    z-index: 1000;
     height: 70px;
+}
+
+.logo {
+    height: 50px !important;
+    width: auto !important;
 }
 /* ==========================
    3. INTRO SECTION
