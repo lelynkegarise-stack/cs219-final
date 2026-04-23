@@ -97,7 +97,10 @@ button {
   display: flex;
   justify-content: space-between;
 }
-
+  .container2 {
+  display: flex;
+  justify-content: space-between;
+}
 .left2 {
   width: 25%;
   text-align: center;
@@ -106,5 +109,14 @@ button {
 
 .right2 {
   width: 65%;
+  text-align: center;
+}
+.div1{
+   width: 33%;
+   text-align:center;
+   background-color: grey;
+}
+.skill{
+     width: 33%;
   text-align: center;
 }
