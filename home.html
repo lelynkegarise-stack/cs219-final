@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css?v=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="logo1.png">
+<link rel="apple-touch-icon" href="logo1.png">  
+  <title>Downsville Ruritan Club</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<div id="navbar"></div>
+<script>
+
+fetch("navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+
+</script>
+  <!-- ===== Intro Section ===== -->
+  <div class="intro">
+    <h1>
+      Lelyn Kegarise<br>
+    </h1>
+         <!--- <img src="Rlogo.png" alt="logo" class="logo1">--->
+
+    <h3>
+     Computer Science Researcher
+    </h3>
+    <p1> Exploring the intersection of gathering information, finding patterns, and codingr. 
+    Dedicateed to building models to predict trends and creathe visuals to solve real world probelms.
+    </p1>
+  </div>
+  <div>
+    <!--- read blog button-->
+  </div>
+</section>
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+<script src="style.js"></script>
+</body>
+</html>
