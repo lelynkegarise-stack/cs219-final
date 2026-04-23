@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+ </head>
+    <body>
+        <div id="navbar">
+        </div><script>
+fetch("navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+
+    const script = document.createElement("script");
+    script.src = "search.js";
+    document.body.appendChild(script);
+  });
+</script>
+        <h1>
+           Lets Conntect!
+        </h1>
+        <p>Whether you have a potential collaboration, questions, or just want to say hello, I'd love to hear from you.
+        I typically respond within 48 hours. </p>
+      <div class="container">
+        <div class="left">
+      <h4> direct contacti </h4>
+      <p1> lelynkegarise@gmail.com</p1>
+      <h4> Professional Newtworks </h4>
+      <p1> </p1>
+          <div class="right">
+            <!-- name -->
+         <label for="firstName">Full Name </label>
+        <input type="text" id="fullName" name="fullName" required>
+         <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+            <!-- Reason -->
+        <label for="reason">Reason for Contact</label>
+        <select id="reason" name="reason">
+        <option value="project">Potential Collaboration</option>
+        <option value="questions">Questions</option>
+        <option value="HI">Say Hello</option>
+        <option value="other">Other</option>
+        </select>
+            <!-- Message -->
+        <label for="lastName">Message</label>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Submit</button>
+
+
+
+
+                <div id="footer"></div>
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+        <script src="style.js"></script>
+    </body> 
+</html>
