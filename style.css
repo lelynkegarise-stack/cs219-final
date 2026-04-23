@@ -37,3 +37,50 @@ nav {
     max-width: 800px;
     margin-top: 20px;
 }
+/* ==========================
+   6. FORMS
+   ========================== */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* ==========================
+   left and right
+   ========================== */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 45%;
+  text-align: center;
+  height: 100%;
+}
+
+.right {
+  width: 45%;
+  text-align: center;
+}
