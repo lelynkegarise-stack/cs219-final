@@ -89,3 +89,22 @@ button {
   width: 45%;
   text-align: center;
 }
+/* ==========================
+   Resume
+   ========================== */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left2 {
+  width: 25%;
+  text-align: center;
+  height: 100%;
+}
+
+.right2 {
+  width: 65%;
+  text-align: center;
+}
