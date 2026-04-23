@@ -1,21 +1,20 @@
 /* ==========================
    1. NAVIGATION BAR
    ========================== */
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: white; 
+}
 nav ul {
     display: flex;
-    justify-content: space-between;
-   list-style-type:none;
+    list-style-type: none;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    position: relative;
-    z-index: 1000;
+    margin: 0;
+    padding: 0 20px;
     height: 70px;
 }
-.name {
-    height: 50px !important;
-    width: auto !important;
-} 
 /* ==========================
    3. INTRO SECTION
    ========================== */
