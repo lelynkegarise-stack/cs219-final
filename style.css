@@ -11,6 +11,10 @@ nav ul {
     z-index: 1000;
     height: 70px;
 }
+.name {
+    height: 50px !important;
+    width: auto !important;
+} 
 /* ==========================
    3. INTRO SECTION
    ========================== */
