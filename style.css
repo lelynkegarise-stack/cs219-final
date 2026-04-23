@@ -124,12 +124,12 @@ button {
 .div1{
     background-color:aqua;
     height: 100%;
-   padding: 3x;
-   boarder: 2px solid black;
 }
 .div11{
     width: 33% ;
-     background-color:grey;
+     background-color:lightgrey;
     float: left;
     height: 100%;
+   padding: 3x;
+   boarder: 2px solid black;
 }
