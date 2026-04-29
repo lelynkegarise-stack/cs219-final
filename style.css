@@ -129,9 +129,19 @@ button {
 .left { flex: 2; }
 .right { flex: 1; text-align: right; }
 /* ==========================
-   Resume
+   about
    ========================== */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc; 
+}
 
+.left3 { flex: 2;text-align: left; }
+.right3 { flex: 1; text-align: right; }
+.middle{ flex: 3; text-align: center; }
 /* ==========================
     LOCATION SECTION (Text + Map)
    ========================== */
