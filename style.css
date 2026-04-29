@@ -1,5 +1,5 @@
 /* ==========================
-   1. NAVIGATION BAR
+    NAVIGATION BAR
    ========================== */
 nav ul {
     display: flex;
@@ -18,7 +18,7 @@ nav ul {
     width: auto !important;
 }
 /* ==========================
-   3. INTRO SECTION
+    INTRO SECTION
    ========================== */
 .intro {
     background-color: white;
@@ -44,7 +44,7 @@ nav ul {
     margin-top: 20px;
 }
 /* ==========================
-   6. FORMS
+    FORMS
    ========================== */
 form {
     max-width: 500px;
@@ -94,7 +94,10 @@ button {
    Resume
    ========================== */
 
-.container {
+/* ==========================
+    LOCATION SECTION (Text + Map)
+   ========================== */
+.lo.container {
   display: flex;
   justify-content: space-between;
 }
@@ -133,4 +136,36 @@ button {
     height: 100%;
    padding: 3x;
    boarder: 2px solid black;
+}
+
+cation-container {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.location-text {
+    flex: 1;
+    text-align: left;
+    color: blue;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.location-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.location-map {
+    flex: 1;
+    min-width: 300px;
 }
