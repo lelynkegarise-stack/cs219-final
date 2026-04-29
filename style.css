@@ -1,16 +1,15 @@
 /* ==========================
     NAVIGATION BAR
    ========================== */
-nav ul {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 10px 20px;
     background-color: white;
     position: relative;
     z-index: 1000;
     height: 70px;
-   gap: 50px;
 }
 
 .logo {
