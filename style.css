@@ -9,7 +9,7 @@ nav {
     background-color: white;
     position: relative;
     z-index: 1000;
-    height: 70px;
+    height: auto;
 }
 
 .logo {
@@ -28,37 +28,6 @@ nav {
 .menu li a {
     text-decoration: none;
     font-weight: bold;
-}
-/* Container for the search elements */
-#navSearchContainer {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    position: relative;
-}
-
-/* The Search Button (Icon) */
-#searchButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: blue; /* Matches your menu color */
-    padding: 5px;
-}
-
-/* The Search Input Box */
-#searchBox {
-    padding: 5px 10px;
-    border: 1px solid blue;
-    border-radius: 20px;
-    outline: none;
-    width: 15vw; 
-    min-width:80px;
-    max-width:180px;
-    font-size: 14px;
-    background-color: white;
-    color: #333;
 }
 /* ==========================
     INTRO SECTION
@@ -295,14 +264,15 @@ Interest section
     MOBILE & RESPONSIVE
    ========================== */
 @media screen and (max-width: 950px) {
-    .hamburger { display: block !important; }
 
     .menu {
-        display: none !important;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
+        display: flex !important;
+        flex-direction: row;
+        flew-wrap:wrap;
+        position: static;
+        justify-content: center;
+        gap: 15px;               
+        margin-top: 15px;
         width: 100%;
         background-color: white;
         border-top: 1px solid #ddd;
