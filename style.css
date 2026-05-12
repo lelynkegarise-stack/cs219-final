@@ -294,12 +294,28 @@ Interest section
         padding: 10px 0;
         list-style: none !important;
     }
-
-    /* Location stack */
-    .location-content {
+    .container {
         flex-direction: column !important;
-        text-align: center;
+        align-items: flex-start; 
+        padding: 10px;
     }
 
-    .location-text { text-align: center; margin-bottom: 30px; }
+    .location-content {
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: left;
+    }
+
+    .right {
+        margin-top: 40px; 
+    }
+
+    .location-text { 
+        text-align: left; 
+        margin-bottom: 15px; 
+    }
 }
