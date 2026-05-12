@@ -212,7 +212,7 @@ Interest section
     text-align: left;
 }
 
-/* TOP ROW */
+
 .card:nth-child(1) {
     grid-column: span 2; 
 }
@@ -223,20 +223,19 @@ Interest section
     color: black;
 }
 
-/* BOTTOM ROW - The Offset */
+
 .card:nth-child(3) {
-    grid-column: 1 / span 3; /* Wider card, spans 3/4 of the row */
+    grid-column: 1 / span 3; 
 }
 
 .card:nth-child(4) {
-    grid-column: 4 / span 1; /* Small card, tucked in the corner */
+    grid-column: 4 / span 1; 
 }
 
-/* Accents */
 .icon {
     font-size: 2.2rem;
     margin-bottom: 12px;
-    color: #20b2aa; /* Teal from screenshot */
+    color: #20b2aa; 
 }
 
 .tags {
@@ -244,12 +243,13 @@ Interest section
     display: flex;
     gap: 8px;
     padding-top: 15px;
+    align:center;
 }
 
 .tag {
     background: #f0f2f5;
     padding: 4px 10px;
-    border-radius: 4px; /* Slightly more square like the screenshot */
+    border-radius: 4px; 
     font-size: 0.75rem;
     color: #555;
     font-weight: bold;
