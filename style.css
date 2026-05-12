@@ -225,7 +225,7 @@ cation-container {
 Interest section
 ========================== */
  .grid-container {
-    display: grid;
+    display: grid !important;
     /* A 4-column grid provides more flexibility for offsetting */
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -234,7 +234,7 @@ Interest section
     padding: 40px;
 }
 
-.card {
+.grid-container .card {
     background: rgb(255, 233, 236);
     padding: 30px;
     border-radius: 12px;
@@ -246,12 +246,12 @@ Interest section
 
 /* TOP ROW */
 .card:nth-child(1) {
-    grid-column: span 2; /* Takes up exactly half */
+    grid-column: span 2; 
 }
 
 .card:nth-child(2) {
     grid-column: span 2;
-    background-color: rgb(255, 255, 248); /* Featured Dark Card */
+    background-color: rgb(255, 255, 248); /
     color: black;
 }
 
