@@ -139,9 +139,9 @@ button {
   border-bottom: 1px solid #ccc; 
 }
 
-.left3 { flex: 2;text-align: left; }
+.left3 { flex: 3;text-align: left; }
 .right3 { flex: 1; text-align: right; }
-.middle{ flex: 3; text-align: center; }
+.middle{ flex: 2; text-align: center; }
 /* ==========================
     LOCATION SECTION (Text + Map)
    ========================== */
@@ -176,6 +176,10 @@ button {
 .div1{
     background-color:black;
     height: 100%;
+}
+.div2{
+    backgroud-color: grey;
+    align:center;
 }
 .div11{
     width: 30% ;
