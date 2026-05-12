@@ -221,3 +221,73 @@ cation-container {
     flex: 1;
     min-width: 300px;
 }
+/* ==========================
+Interest section
+========================== */
+ .grid-container {
+    display: grid;
+    /* A 4-column grid provides more flexibility for offsetting */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.card {
+    background: rgb(255, 233, 236);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* TOP ROW */
+.card:nth-child(1) {
+    grid-column: span 2; /* Takes up exactly half */
+}
+
+.card:nth-child(2) {
+    grid-column: span 2;
+    background-color: rgb(255, 255, 248); /* Featured Dark Card */
+    color: black;
+}
+
+/* BOTTOM ROW - The Offset */
+.card:nth-child(3) {
+    grid-column: 1 / span 3; /* Wider card, spans 3/4 of the row */
+}
+
+.card:nth-child(4) {
+    grid-column: 4 / span 1; /* Small card, tucked in the corner */
+}
+
+/* Accents */
+.icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    color: #20b2aa; /* Teal from screenshot */
+}
+
+.tags {
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+    padding-top: 15px;
+}
+
+.tag {
+    background: #f0f2f5;
+    padding: 4px 10px;
+    border-radius: 4px; /* Slightly more square like the screenshot */
+    font-size: 0.75rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.featured .tag {
+    background: #21262d;
+    color: #c9d1d9;
+}
