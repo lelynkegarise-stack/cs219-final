@@ -5,10 +5,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: white;
     position: relative;
-    z-index: 1000;
     height: auto;
 }
 
@@ -264,6 +263,12 @@ Interest section
     MOBILE & RESPONSIVE
    ========================== */
 @media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px 10px;
+        gap: 15px;
+    }
 
     .menu {
         display: flex !important;
