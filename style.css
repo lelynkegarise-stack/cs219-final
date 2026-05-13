@@ -99,6 +99,13 @@ button {
 /* ==========================
    about
    ========================== */
+.technical-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -339,5 +346,8 @@ Interest section
         text-align: left; 
         order: -1;        
     }
-}
+    .technical-section {
+        flex-direction: column; /* Stacks them */
+        gap: 10px;
+    }
 }
