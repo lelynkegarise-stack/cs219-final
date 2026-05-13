@@ -167,8 +167,10 @@ cation-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .location-text {
@@ -186,8 +188,15 @@ cation-container {
 }
 
 .location-map {
-    flex: 1;
-    min-width: 200px;
+    width: 100%; 
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+.location-map iframe {
+    width: 100% !important; 
+    height: 300px; 
+    border-radius: 10px;
 }
 /* ==========================
 Interest section
