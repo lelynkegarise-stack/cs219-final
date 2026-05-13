@@ -106,21 +106,19 @@ button {
     gap: 30px;
     padding: 20px;
 }
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  border-bottom: 1px solid #ccc; 
+
+
+.middle3 { flex: 1.5; order: 1; } 
+.right3  { flex: 3;   order: 2; } 
+.left3   { flex: 1;   order: 3; text-align: right; } 
+
+.second-job, .second-list, .second-date {
+    margin-top: 40px; 
 }
 
-.left3 { flex: 1;text-align: left; }
-.right3 { flex: 2; text-align: right; }
-.middle{ flex: 1; text-align: leeft; }
-.left3 h1 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    margin-top: 20px;
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 /* ==========================
     LOCATION SECTION (Text + Map)
@@ -339,15 +337,18 @@ Interest section
         text-align: left; 
         margin-bottom: 15px; 
     }
-    .container {
-        flex-direction: column;
-    }
-    .right3 {
-        text-align: left; 
-        order: -1;        
-    }
     .technical-section {
-        flex-direction: column; /* Stacks them */
+        flex-direction: column; 
         gap: 10px;
+    }
+
+    .middle3, .right3, .left3 {
+        width: 100%;
+        order: unset; 
+        text-align: left;
+    }
+
+    .second-date {
+        margin-top: 10px; 
     }
 }
