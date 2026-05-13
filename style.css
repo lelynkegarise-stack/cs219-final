@@ -102,14 +102,19 @@ button {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
   border-bottom: 1px solid #ccc; 
 }
 
-.left3 { flex: 3;text-align: left; }
-.right3 { flex: 1; text-align: right; }
-.middle{ flex: 2; text-align: center; }
+.left3 { flex: 1;text-align: left; }
+.right3 { flex: 2; text-align: right; }
+.middle{ flex: 1; text-align: leeft; }
+.left3 h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
 /* ==========================
     LOCATION SECTION (Text + Map)
    ========================== */
@@ -327,4 +332,12 @@ Interest section
         text-align: left; 
         margin-bottom: 15px; 
     }
+    .container {
+        flex-direction: column;
+    }
+    .right3 {
+        text-align: left; 
+        order: -1;        
+    }
+}
 }
