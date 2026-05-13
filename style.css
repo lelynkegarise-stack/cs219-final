@@ -99,26 +99,40 @@ button {
 /* ==========================
    about
    ========================== */
-.technical-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
+.experience-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-
-.middle3 { flex: 1.5; order: 1; } 
-.right3  { flex: 3;   order: 2; } 
-.left3   { flex: 1;   order: 3; text-align: right; } 
-
-.second-job, .second-list, .second-date {
-    margin-top: 40px; 
+.job-entry {
+    margin-bottom: 40px; /* Space between the two jobs */
 }
 
-.experience-list {
-    list-style-type: disc;
-    padding-left: 20px;
+.job-header {
+    display: flex;
+    justify-content: space-between; /* Pushes date to the right */
+    align-items: flex-start;
+    border-bottom: 1px solid #eee; /* Optional line for "pretty" alignment */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.job-titles h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.job-date {
+    font-weight: bold;
+    color: #666;
+    white-space: nowrap; /* Keeps the date on one line on Mac */
+}
+
+.job-details p {
+    margin: 5px 0;
+    line-height: 1.6;
 }
 /* ==========================
     LOCATION SECTION (Text + Map)
@@ -337,18 +351,17 @@ Interest section
         text-align: left; 
         margin-bottom: 15px; 
     }
-    .technical-section {
-        flex-direction: column; 
-        gap: 10px;
+    .job-header {
+        flex-direction: column; /* Stacks Date under Title on phone */
+        gap: 5px;
     }
-
-    .middle3, .right3, .left3 {
-        width: 100%;
-        order: unset; 
+    
+    .job-date {
         text-align: left;
+        color: blue; /* Highlight date on mobile */
     }
 
-    .second-date {
-        margin-top: 10px; 
+    .job-titles h1 {
+        font-size: 1.2rem; /* Slightly smaller for phone screens */
     }
 }
